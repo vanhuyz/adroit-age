@@ -8,4 +8,8 @@ class Date
 		Adroit::Age.new.find_with_month self, year_cust, month_cust
 	end
 
+  def find_age_with_month_to_a
+    Adroit::Age.new.find_with_month_to_a self
+  end
+
 end
