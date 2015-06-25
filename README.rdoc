@@ -34,6 +34,9 @@ Insert into your gem file
     dob.find_age_with_month
     #=> "23 years and 1 month"
 
+    dob.find_age_with_month_to_a
+    #=> [23,1]
+
 
 == Contributing to adroit-age
  
