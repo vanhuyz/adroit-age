@@ -1,9 +1,9 @@
 module Adroit
-
   class Age
-
+  
     attr_accessor :dob, :now, :age
     @@now = Time.now.utc.to_date
+
     def find_year dob
       age = @@now.year - dob.year - ((full_year? dob) ? 0 : 1)
     end
