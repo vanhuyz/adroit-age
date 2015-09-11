@@ -23,7 +23,7 @@ module Adroit
 
     def find_month dob
       if @@now.month == dob.month
-        @@now.year == dob.year ? 0 : 11
+        (full_month? dob.day) ? 0 : 11
       elsif @@now.month < dob.month
         ((12 - dob.month) + @@now.month) - ((full_month? dob.day) ? 0 : 1)
       elsif @@now.month > dob.month
